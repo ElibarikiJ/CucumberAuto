@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-15T09:34:54.376Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10653450000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.basic.hooksSD.HooksSD.setupBefore()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate first name field",
+        "description": "",
+        "id": "create-account-of-facebook;validate-first-name-field",
+        "after": [
+          {
+            "result": {
+              "duration": 138478000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.basic.hooksSD.HooksSD.close_browser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 90188028000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User need to be on Facebook login page",
+            "match": {
+              "location": "com.basic.hooksSD.HooksSD.user_need_to_be_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1173966000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters user \"brkjohn.3@gmail.com\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "brkjohn.3@gmail.com",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.hooksSD.HooksSD.user_enters_user_first_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1082756000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User checks user \"brkjohn.3@gmail.com\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "brkjohn.3@gmail.com",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.hooksSD.HooksSD.user_checks_user_first_name_is_present(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T09:36:37.931Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1733112000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.basic.hooksSD.HooksSD.setupBefore()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Validate create user multiple field",
+        "description": "",
+        "id": "create-account-of-facebook;validate-create-user-multiple-field",
+        "after": [
+          {
+            "result": {
+              "duration": 19192000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.basic.hooksSD.HooksSD.close_browser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56833665000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User need to be on Facebook login page",
+            "match": {
+              "location": "com.basic.hooksSD.HooksSD.user_need_to_be_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d91.0.4472.101)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Coder\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.4.0-70-generic\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.Vk9xWU}, goog:chromeOptions: {debuggerAddress: localhost:34927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9f8ac3d3c25007c8f7a7dbb7d7cba7f8\n*** Element info: {Using\u003did, value\u003demail}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.basic.hooksSD.HooksSD.user_enters_user_first_name(HooksSD.java:32)\n\tat ✽.User enters user \"pmgissa@gmaill.com\" first name(file:///home/barick/Desktop/Projects/CucumberAuto/src/test/resources/com/basic/hooksFF/HooksFF.feature:12)\n",
+              "duration": 55980000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "User enters user \"pmgissa@gmaill.com\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pmgissa@gmaill.com",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.hooksSD.HooksSD.user_enters_user_first_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 430000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user enters user \"pmgissa\" surname",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pmgissa",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.hooksSD.HooksSD.user_enters_user_surname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 280000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User checks user \"pmgissa.3@gmail.com\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pmgissa.3@gmail.com",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.hooksSD.HooksSD.user_checks_user_first_name_is_present(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 315000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User mobile field should be blank",
+            "match": {
+              "location": "com.basic.hooksSD.HooksSD.user_mobile_field_should_be_blank()"
+            },
+            "keyword": "But "
+          }
+        ]
+      }
+    ],
+    "name": "Create account of facebook",
+    "description": "  As user u need to open facebook home page and do the validation",
+    "id": "create-account-of-facebook",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/basic/hooksFF/HooksFF.feature",
+    "tags": []
+  }
+]

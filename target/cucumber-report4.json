@@ -1,0 +1,417 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-15T08:21:20.471Z",
+        "line": 13,
+        "name": "Validate create user multiple fields",
+        "description": "",
+        "id": "create-account-of-a-facebook;validate-create-user-multiple-fields;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7050000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User need to be on Facebook login page",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_need_to_be_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 661000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters user \"Tonny\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tonny",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_enters_user_first_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 332000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters user \"Jerry\" surname",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jerry",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_enters_user_surname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 318000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User checks user \"Tonny\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tonny",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_checks_user_first_name_is_present(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 219000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User mobile field should be blank",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_mobile_field_should_be_blank()"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 215000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close browser",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:21:20.658Z",
+        "line": 14,
+        "name": "Validate create user multiple fields",
+        "description": "",
+        "id": "create-account-of-a-facebook;validate-create-user-multiple-fields;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 231000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User need to be on Facebook login page",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_need_to_be_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1124000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters user \"Jack\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jack",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_enters_user_first_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 884000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters user \"Mbezi\" surname",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mbezi",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_enters_user_surname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User checks user \"Jack\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jack",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_checks_user_first_name_is_present(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 234000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User mobile field should be blank",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_mobile_field_should_be_blank()"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 242000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close browser",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:21:20.680Z",
+        "line": 15,
+        "name": "Validate create user multiple fields",
+        "description": "",
+        "id": "create-account-of-a-facebook;validate-create-user-multiple-fields;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 253000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User need to be on Facebook login page",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_need_to_be_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 223000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters user \"Hope\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hope",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_enters_user_first_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 257000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters user \"Titus\" surname",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Titus",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_enters_user_surname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1513000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User checks user \"Hope\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hope",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_checks_user_first_name_is_present(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 357000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User mobile field should be blank",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_mobile_field_should_be_blank()"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 1336000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close browser",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:21:20.724Z",
+        "line": 16,
+        "name": "Validate create user multiple fields",
+        "description": "",
+        "id": "create-account-of-a-facebook;validate-create-user-multiple-fields;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 225000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User need to be on Facebook login page",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_need_to_be_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 192000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters user \"James\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "James",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_enters_user_first_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 208000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters user \"Mpanga\" surname",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mpanga",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_enters_user_surname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User checks user \"James\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "James",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_checks_user_first_name_is_present(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 227000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User mobile field should be blank",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.user_mobile_field_should_be_blank()"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 185000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close browser",
+            "match": {
+              "location": "com.basic.datadrivenSD.DataDrivenSD.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create account of a facebook",
+    "description": "",
+    "id": "create-account-of-a-facebook",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/basic/datadrivenFF/DataDrivenFF.feature",
+    "tags": []
+  }
+]
