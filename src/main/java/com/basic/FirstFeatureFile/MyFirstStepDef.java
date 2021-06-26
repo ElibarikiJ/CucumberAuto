@@ -1,35 +1,34 @@
 package com.basic.FirstFeatureFile;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import static junit.framework.Assert.assertEquals;
 
 public class MyFirstStepDef {
 
-    WebDriver driver;
+    @Before()
+    public void setUp() {
+        Configuration.browser = "firefox";
+    }
 
     @Given("^User need to be on Facebook login page$")
-    public void user_need_to_be_on_facebook_login_page() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "/home/barick/Downloads/chromedriver");
-        driver = new ChromeDriver();
-        driver.get("https://www.facebook.com/");
-        driver.manage().window().maximize();
-        Thread.sleep(10000);
+    public void user_need_to_be_on_facebook_login_page() {
+        Selenide.open("https://www.facebook.com/");
     }
 
     @When("^User enters user first name$")
     public void user_enters_user_first_name() {
-        driver.findElement(By.id("email")).sendKeys("elihno@gmail.com");
+        Selenide.$(By.id("email")).sendKeys("elihno@gmail.com");
     }
 
     @Then("^User checks user first name is present$")
     public void user_checks_user_first_name_is_present() {
-        String userNameActual = driver.findElement(By.id("email")).getAttribute("value");
-        assertEquals("elihno@gmail.com", userNameActual);
+        Selenide.$(By.id("email")).shouldNotHave(Condition.text("elihno@gmail.com"));
     }
 }
