@@ -1,6 +1,9 @@
 package com.basic.parameterizationSD;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,6 +13,11 @@ import static junit.framework.Assert.assertEquals;
 public class ParameterizationSD {
 
     WebDriver driver;
+
+    @Before()
+    public void setUp() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
+    }
 
     @Given("^User need to be on Facebook login page$")
     public void user_need_to_be_on_facebook_login_page() throws InterruptedException {

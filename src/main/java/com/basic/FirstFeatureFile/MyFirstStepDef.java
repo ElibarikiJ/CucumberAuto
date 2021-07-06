@@ -3,10 +3,12 @@ package com.basic.FirstFeatureFile;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.logevents.SelenideLogger;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.By;
 import static junit.framework.Assert.assertEquals;
 
@@ -14,6 +16,7 @@ public class MyFirstStepDef {
 
     @Before()
     public void setUp() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
         Configuration.browser = "firefox";
     }
 

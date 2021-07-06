@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-25T14:06:12.145Z",
+        "start_timestamp": "2021-07-06T08:30:58.743Z",
         "before": [
           {
             "result": {
-              "duration": 594940000,
+              "duration": 2100951000,
               "status": "passed"
             },
             "match": {
@@ -24,8 +24,9 @@
         "steps": [
           {
             "result": {
-              "duration": 13791339000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.TimeoutException: TimedPromise timed out after 30000 ms\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Coder\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.4.0-70-generic\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nselenide.url: https://www.facebook.com/\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 19627, moz:profile: /tmp/rust_mozprofile6p7TXr, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.4.0-70-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nselenide.baseUrl: http://localhost:8080\nSession ID: eb099be6-7d31-46b1-bdfa-764f6f04a8ac\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)\n\tat com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:70)\n\tat com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:139)\n\tat com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)\n\tat com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:30)\n\tat com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:87)\n\tat com.codeborne.selenide.Selenide.open(Selenide.java:50)\n\tat com.basic.FirstFeatureFile.MyFirstStepDef.user_need_to_be_on_facebook_login_page(MyFirstStepDef.java:25)\n\tat ✽.User need to be on Facebook login page(classpath:com/basic/FirstFeatureFile/MyFirstFeature.feature:5)\n",
+              "duration": 88621945000,
+              "status": "failed"
             },
             "line": 5,
             "name": "User need to be on Facebook login page",
@@ -36,8 +37,8 @@
           },
           {
             "result": {
-              "duration": 143952000,
-              "status": "passed"
+              "duration": 317000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "User enters user first name",
@@ -48,8 +49,8 @@
           },
           {
             "result": {
-              "duration": 385432000,
-              "status": "passed"
+              "duration": 282000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "User checks user first name is present",
